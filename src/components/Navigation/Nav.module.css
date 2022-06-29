@@ -1,0 +1,26 @@
+.navigation {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea20;
+}
+.navigation .logo {
+  color: #ffd369;
+  font-size: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+.menu_item {
+  margin: 0 20px;
+}
+.menu_item a {
+  text-decoration: none;
+}

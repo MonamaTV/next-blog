@@ -1,0 +1,24 @@
+.blog {
+  min-height: 100vh;
+  padding: 0rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog_content,
+.blog_header {
+  width: 50vw;
+}
+.blog_header h1 {
+  line-height: 1.15;
+  font-size: 4rem;
+  font-weight: 900;
+}
+.blog_content *,
+.blog_header * {
+  margin: 10px;
+}
+.blog_content p {
+  margin: 20px 10px;
+}

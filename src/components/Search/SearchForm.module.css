@@ -1,0 +1,29 @@
+.search_form {
+  display: flex;
+  width: 100vh;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.search input {
+  padding: 13px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+
+  width: 550px;
+}
+.search button {
+  padding: 13px;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+
+  outline: none;
+  border: none;
+  background-color: #ffd369;
+  margin-left: -20px;
+  color: rgb(90, 76, 33);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

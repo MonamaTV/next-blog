@@ -1,0 +1,9 @@
+/* ffd369 */
+.main {
+  display: flex;
+  width: 100vh;
+  flex-direction: column;
+  margin: 10px auto;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
