@@ -34,22 +34,12 @@ export const fetchPosts = async (page = 1, per_page = 20) => {
 };
 
 export const searchPostsByTags = async (query) => {
-  console.log("Here");
   try {
-    const { data } = await axiosInstance().get("/", {
-      params: {
-        filter_query: {
-          tags: {
-            like: `react`,
-          },
-        },
-      },
-    });
-    console.log("Here 2");
-
-    console.log(data);
+    const { data } = await axiosInstance().get(
+      `/?filter_query[tags][like]=*${query}*`
+    );
+    return data;
   } catch (error) {
-    console.log(error);
     return null;
   }
 };

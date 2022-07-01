@@ -1,9 +1,8 @@
 import Link from "next/link";
-import MetaTags from "../Head/Head";
 import styles from "./Article.module.css";
 const Article = ({ data }) => {
   const {
-    content: { content, description, tags, title },
+    content: { description, title },
     created_at,
     slug,
     published_at,
@@ -15,7 +14,7 @@ const Article = ({ data }) => {
       <small>
         Published at {published_at?.split("T")[0] || created_at?.split("T")[0]}
       </small>
-      <Link href={"/blog/" + slug + "?key=value"}>Read More</Link>
+      <Link href={"/blog/" + slug}>Read More</Link>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { fetchPost, fetchPostSlugs } from "../../src/lib/cms";
 import styles from "./index.module.css";
-
+//Component uses dynamic routing
 const Blog = ({ post }) => {
   return (
     <div className={styles.blog}>
@@ -101,7 +101,7 @@ export const getStaticProps = async ({ params }) => {
     },
   };
 };
-export const getStaticPaths = async ({ params }) => {
+export const getStaticPaths = async () => {
   const posts = await fetchPostSlugs();
   return {
     paths: posts,
